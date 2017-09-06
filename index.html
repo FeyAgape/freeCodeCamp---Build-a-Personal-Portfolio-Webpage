@@ -17,7 +17,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,7 +31,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -39,13 +41,13 @@
           </ul>
         </li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron" id="home">
    <img class="img-responsive center-block" alt="me" src="https://github.com/FeyAgape/Assets/blob/master/jumbotronimg2.jpg?raw=1">
   <h1 class="text-center">Junior Software Developer</h1> 
   <p class="text-center">I am a versatile programmer with knowledge and interest to learn and code, who specialise in Web and Android development.</p>
@@ -86,7 +88,7 @@
    
    <div class="container-fluid yellow-background whitespace" id="skills">
   <h2 class="text-center">Skills</h2>
-    <p class="text-center">I think what makes me competent at this languages and frameworks is that I am able to look up documentations, I utilize Test-driven Development(TDD), but most importantly, I am building and developing these skills and languages every day.</p>
+    <p class="text-center">I think what makes me competent at this languages and frameworks is that I am able to look up documentations, I utilize TDD, but most importantly I am building and developing these skills and languages every day.</p>
 </div>
 
 <div class="container about special-top special">
@@ -96,42 +98,49 @@
     <th>Experience with</th>
     <th>Languages</th> 
     <th>Frameworks</th>
+    <th>Services</th>
   </tr>
 
   <tr>
     <td>Version Control (Git and GitHub)</td>
     <td>HTML (HTML5)</td>
     <td>BootStrap</td>
+    <td>AWS (Amazon Web Services)</td>
     </tr>
 
     <tr>
     <td>Command Line (Linux Server)</td>
     <td>CSS (CSS3)</td>
     <td>SASS/SCSS</td>
+      <td>WordPress</td>
     </tr>
 
     <tr>
     <td>Android Studio</td>
     <td>Javascript</td>
     <td>jQuery</td>
+      <td>Facebook for Developers</td>
     </tr>
 
     <tr>
     <td>CMS (Content Management Systems)</td>
     <td>XML</td>
     <td>ReactJS</td>
+      <td>Adobe Experience Design (XD)</td>
     </tr>
-
+  
     <tr>
     <td>Google Analytics and Data Studio</td>
      <td>Java</td>
      <td>Jekyll</td>
+      <td>Adobe Illustrator Draw</td>
      </tr>
 
      <tr>
     <td>Test-driven Development (TDD)</td>
     <td>Python</td>
     <td></td>
+       <td>Adobe PDF Creator</td>
   </tr>
 </table>
 </div>
@@ -158,38 +167,12 @@
 
       <div class="row portfolio">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="portfolio-heading">Ari App. <span class="text-muted">Android</span></h2>
-          <p class="lead">An Android app that displays information about a small business. Built using 100% Java. App is being updated to make it fully functional and it implements Facebook SDK for Android and uses Facebook Login and Account kit.</p>
-          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Ari-HairnBeauty" target="_blank" role="button">View repo</a></p>
+         <h2 class="portfolio-heading">My Portfolio Webpage. <span class="text-muted">Web</span></h2>
+          <p class="lead">It's a one page personal portfolio website. It was built using 88% HTML and 12% CSS. It uses BootStrap and Jquery to make it responsive and you can access all of the portfolio webpage's content just by scrolling. It contains links to my social media account and also my projects repositories.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/freeCodeCamp---Build-a-Personal-Portfolio-Webpage" target="_blank" role="button">View repo</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/oneapp.png" alt="Ari App Screenshot">
-        </div>
-      </div>
-
-      <hr class="portfolio-divider">
-
-      <div class="row portfolio">
-        <div class="col-md-7">
-          <h2 class="portfolio-heading">Rugby Score Counter App. <span class="text-muted">Android</span></h2>
-          <p class="lead">An Android app that track scores between two teams playing Rugby. It was built using 100% Java. Each score button updates the score TextView in its column by adding the correct number of points and the reset button resets the scores on both of the score TextViews.</p>
-          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/RugbyScoreCounter" target="_blank" role="button">View repo</a></p>
-        </div>
-        <div class="col-md-5">
-          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/twoapp.png" alt="App Image">
-        </div>
-      </div>
-
-      <hr class="portfolio-divider">
-
-      <div class="row portfolio">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="portfolio-heading">Quiz App. <span class="text-muted">Android</span></h2>
-          <p class="lead">An Android educational app that quizzes users about a certain topic (Planet Earth). App includes a button for the user to submit their answers and receive a score. It was built using 100% Java. The app gracefully handles displaying all the content on screen when rotated. The app contains one Control Statement using an if/else statement and the grading button displays a toast which accurately displays the results of the quiz.</p>
-          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/FactorCrazy" target="_blank" role="button">View repo</a></p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/threeapp.png" alt="App image">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/portfolio.png?raw=1" alt="Website screenshot">
         </div>
       </div>
 
@@ -202,13 +185,141 @@
           <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/freeCodeCamp---Build-a-Tribute-Page" target="_blank" role="button">View repo</a></p>
         </div>
         <div class="col-md-5">
-          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/website2.png?raw=1" alt="Website screenshot">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/tribute.png?raw=1" alt="Website screenshot">
         </div>
       </div>
 
       <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">Quiz App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android educational app. App includes a button for the user to submit their answers and receive a score, via a toast which accurately displays the results of the quiz. It was built using 100% Java. The app gracefully handles displaying all the content on screen when rotated and contains an if/else Control Statement.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/FactorCrazy" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/threeapp.png" alt="App image">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Rugby Score Counter App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android app that track scores between two Rugby teams. It was built using 100% Java. Each score button updates the score TextView in its column by adding the correct number of points and the reset button resets the scores on both of the score TextViews.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/RugbyScoreCounter" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://feyagape.github.io/css/images/twoapp.png" alt="App Image">
+        </div>
+      </div>
+      <hr class="portfolio-divider">
    
-</div>
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">ShopIt App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android inventory app, it uses SQLite database to store and present information. Built using 100% Java. App updates information based on user inputs, and creates intents to other apps using stored information. The app also includes logic to validate that no null values are accepted and no external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/ShopIt" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/shopit.png?raw=1" alt="App Screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Book Lister App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android app which allows users to get a list of published books on a given topic, via an HTTP request from the Google Books API, fetches results and display them to the user. It was built using 100% Java. The network call occurs off the UI thread using an AsyncTask and it populates the information parsed from the JSON response, no external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/BookLister" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/booklister.png?raw=1" alt="App Image">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">Chrissi Island App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android tour guide app. It was built using 100% Java. The app presents relevant information to a user who’s intrested in visiting the Island. The app uses intents, ViewPager and Fragments, contains my own custom class and object for storing location information and uses a custom adapter to populate the layout with views based on instances of the custom class.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Chrissi-Island" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/christi.png?raw=1" alt="App image">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+           <h2 class="portfolio-heading">Ari App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android app that displays information about a small business. Built using 100% Java. App is being updated to make it fully functional and it implements Facebook SDK for Android and uses Facebook Login and Account kit.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Ari-HairnBeauty" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/ari.png?raw=1" alt="Ari App Screenshot">
+        </div>
+      </div>
+  <hr class="portfolio-divider">
+   
+      <div class="row portfolio">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="portfolio-heading">Medication Tracker App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android habit tracking app which allows users to store and track information. Built using 100% Java. The app uses SQLite database to store and present information. The app is able to populating tables with new entries, modify the entries and display the contents of the table to users, and no Content Providers or external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/Medication-Tracker" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/medication.png?raw=1" alt="App Screenshot">
+        </div>
+      </div>
+
+      <hr class="portfolio-divider">
+
+      <div class="row portfolio">
+        <div class="col-md-7">
+          <h2 class="portfolio-heading">Breaking News App. <span class="text-muted">Android</span></h2>
+          <p class="lead">An Android news feed app that connects to the Internet to provide news articles via an HTTP request and API key from the Guardian API, it uses Intents as clicking on a story opens the story in the user’s browser. Built using 100% Java. The network call occurs off the UI thread using a Loader and it populates the information parsed from the JSON response, no external libraries where used for core functionality.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://github.com/FeyAgape/News-Feed" target="_blank" role="button">View repo</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="portfolio-image img-responsive center-block" src="https://github.com/FeyAgape/Assets/blob/master/news.png?raw=1" alt="App Image">
+        </div>
+      </div>
+  </div>
+  
+   <div class="container-fluid pink-background special-top" id="contact">
+    <div class="footer">
+     <div class="row">
+       <div class="col-md-4">
+      <h5>&copy; Fey Ijaware 2017</h5>
+         </div>
+        <div class="col-md-8">
+      <ul class="logo">
+  <li class="social">
+  <a href="https://www.linkedin.com/in/feyijaware/" target="_blank" ><img src="https://feyagape.github.io/css/images/linkedin.png" alt=" linkedin logo"/></a>
+</li>
+  <li class="social">
+  <a href="https://twitter.com/FeyAgape" target="_blank" ><img src="https://feyagape.github.io/css/images/twitter.png" alt=" twitter logo"/></a>
+</li>
+<li class="social">
+  <a href="https://medium.com/@feyagape" target="_blank" ><img src="https://feyagape.github.io/css/images/medium1.png" alt=" medium logo"/></a>
+</li>
+<li class="social">
+  <a href="https://github.com/FeyAgape" target="_blank" ><img src="https://feyagape.github.io/css/images/gitHub1.png" alt="github logo"/></a>
+</li>
+  <li class="social">
+  <a href="https://www.instagram.com/goldengirl.25/" target="_blank" ><img src="https://feyagape.github.io/css/images/insta.png" alt=" insta logo"/></a>
+</li>
+    </ul>
+           </div>
+  </div>
+    </div>
+  </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
